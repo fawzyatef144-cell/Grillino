@@ -374,7 +374,7 @@ function displayCartItems(i) {
   if (cardInCart.length > 0) {
     document.querySelector(".cart .itemss").innerHTML = cardInCart;
   } else {
-    document.querySelector("cart .itemss").innerHTML =
+    document.querySelector(".cart .itemss").innerHTML =
       `<h5 style="text-align: center;"> Cart is Empty </h5>`;
   }
   let totalPrice = cartItems.reduce((a, b) => {
