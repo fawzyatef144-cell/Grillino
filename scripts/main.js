@@ -381,8 +381,10 @@ function displayCartItems(i) {
     return a + b.price;
   }, 0);
   document.querySelector(".totalPrice").innerHTML = `$${totalPrice.toFixed(2)}`;
-
-  document.querySelector(".amount").innerHTML = cartItems.length;
+  let amount = cartItems.reduce((a , b )=>{
+        return a + b.quantity
+    } , 0)
+    document.querySelector('.amount').innerHTML = amount
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
 
