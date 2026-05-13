@@ -1,53 +1,51 @@
 // $(document).ready(function(){
-    // });
-    
-document.addEventListener('DOMContentLoaded', function() {
-    
-    $('.slider1').slick({
-        infinite: true,         // يلف دايرة كاملة
-        autoplay: true,         // يقلب تلقائي
-        autoplaySpeed: 4000,    // يستنى 4 ثواني بين كل سلايد
-        speed: 1000,            // نعومة الحركة (ثانية كاملة)
-        fade: true,             // خاصية الـ Fade (اختياري: بتخلي الصور تدخل في بعض بنعومة بدل ما تتزحلق)
-        cssEase: 'linear',      // انسيابية الحركة
-        slidesToShow: 1,        // لازم 1 عشان دي Hero Section
-        slidesToScroll: 1,
-        arrows: true,           // إظهار الأسهم (لو إنت عامل لها ديزاين)
-        dots: false,             
-        pauseOnHover: false,  
-        prevArrow : "header .arrwos div.prev",
-        nextArrow : "header .arrwos div.next",
-        
-        responsive: [
-            {
-                breakpoint: 1024, // شاشات اللابتوب الصغيرة
-                settings: {
-                    arrows: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 768, // التابلت
-                settings: {
-                    arrows: false, // نخفي الأسهم في التابلت عشان زحمة الشاشة
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 480, // الموبايل
-                settings: {
-                    arrows: false,
-                    dots: true,
-                    fade: false    // في الموبايل الـ Slide العادي (زحلقة) ساعات بيبقى أخف
-                }
-            }
-        ]
-    });
+// });
 
-}); 
+document.addEventListener("DOMContentLoaded", function () {
+  $(".slider1").slick({
+    infinite: true, // يلف دايرة كاملة
+    autoplay: true, // يقلب تلقائي
+    autoplaySpeed: 4000, // يستنى 4 ثواني بين كل سلايد
+    speed: 1000, // نعومة الحركة (ثانية كاملة)
+    fade: true, // خاصية الـ Fade (اختياري: بتخلي الصور تدخل في بعض بنعومة بدل ما تتزحلق)
+    cssEase: "linear", // انسيابية الحركة
+    slidesToShow: 1, // لازم 1 عشان دي Hero Section
+    slidesToScroll: 1,
+    arrows: true, // إظهار الأسهم (لو إنت عامل لها ديزاين)
+    dots: false,
+    pauseOnHover: false,
+    prevArrow: "header .arrwos div.prev",
+    nextArrow: "header .arrwos div.next",
 
-document.addEventListener('DOMContentLoaded', function() {
-$('.slider2').slick({
+    responsive: [
+      {
+        breakpoint: 1024, // شاشات اللابتوب الصغيرة
+        settings: {
+          arrows: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768, // التابلت
+        settings: {
+          arrows: false, // نخفي الأسهم في التابلت عشان زحمة الشاشة
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 480, // الموبايل
+        settings: {
+          arrows: false,
+          dots: true,
+          fade: false, // في الموبايل الـ Slide العادي (زحلقة) ساعات بيبقى أخف
+        },
+      },
+    ],
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  $(".slider2").slick({
     infinite: true,
     slidesToShow: 3, // جرب تعرض 2 في الشاشة الكبيرة هيكون شكلهم جامد مع ديزاينك
     slidesToScroll: 1,
@@ -56,254 +54,250 @@ $('.slider2').slick({
     dots: true,
     arrows: false,
     responsive: [
-        {
-            breakpoint: 1200,
-            settings: { slidesToShow: 1 } // في الموبايل والتابلت واحدة بس
-        }
-    ]
+      {
+        breakpoint: 1200,
+        settings: { slidesToShow: 1 }, // في الموبايل والتابلت واحدة بس
+      },
+    ],
+  });
 });
-})
 
-
-$(document).ready(function(){
-    $('.slider3').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: { slidesToShow: 2 }
-            },
-            {
-                breakpoint: 768,
-                settings: { slidesToShow: 1 }
-            }
-        ]
-    });
+$(document).ready(function () {
+  $(".slider3").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  });
 });
-$(document).ready(function(){
-    $('.slider4').slick({
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000,
-        arrows: false,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 1100,
-                settings: { slidesToShow: 2 }
-            },
-            {
-                breakpoint: 768,
-                settings: { slidesToShow: 1 }
-            }
-        ]
-    });
+$(document).ready(function () {
+  $(".slider4").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    arrows: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  });
 });
-let toUp = document.querySelector('.toUp')
-let iconMenu = document.querySelector('.menuIcon')
-let dropMenu = document.querySelector('.dropMenu')
-let cart = document.querySelector('.cart')
-let handelr = document.querySelectorAll('.handelr')
-let shadow = document.querySelector('.shadow')
+let toUp = document.querySelector(".toUp");
+let iconMenu = document.querySelector(".menuIcon");
+let dropMenu = document.querySelector(".dropMenu");
+let cart = document.querySelector(".cart");
+let handelr = document.querySelectorAll(".handelr");
+let shadow = document.querySelector(".shadow");
 
+const products = [
+  {
+    id: 1,
+    title: "Cheese Pizza",
+    price: 10.99,
+    image: "./images/food-menu-img-10-1.png",
+    quantity: 1,
+    category: "Pizza",
+    rate: 5,
+  },
+  {
+    id: 2,
+    title: "Burger Deluxe",
+    price: 12.5,
+    image: "./images/food-menu-img-11-1.png",
+    quantity: 1,
+    category: "Burger",
+    rate: 4,
+  },
+  {
+    id: 3,
+    title: "Chicken Sandwich",
+    price: 8.99,
+    image: "./images/food-menu-img-9-2.png",
+    quantity: 1,
+    category: "Sandwich",
+    rate: 5,
+  },
+  {
+    id: 4,
+    title: "French Fries",
+    price: 4.99,
+    image: "./images/food-menu-img-9-3.png",
+    quantity: 1,
+    category: "Snacks",
+    rate: 4,
+  },
+  {
+    id: 5,
+    title: "Hot Dog",
+    price: 7.25,
+    image: "./images/food-menu-img-9-4.png",
+    quantity: 1,
+    category: "Fast Food",
+    rate: 4,
+  },
+  {
+    id: 6,
+    title: "Pasta Alfredo",
+    price: 13.75,
+    image: "./images/food-menu-img-9-4.png",
+    quantity: 1,
+    category: "Pasta",
+    rate: 5,
+  },
+  {
+    id: 7,
+    title: "Fried Chicken",
+    price: 11.49,
+    image: "./images/food-menu-img-10-1.png",
+    quantity: 1,
+    category: "Chicken",
+    rate: 5,
+  },
+  {
+    id: 8,
+    title: "Beef Steak",
+    price: 18.99,
+    image: "./images/food-menu-img-10-2.png",
+    quantity: 1,
+    category: "Steak",
+    rate: 5,
+  },
+  {
+    id: 9,
+    title: "Seafood Pizza",
+    price: 15.99,
+    image: "./images/food-menu-img-10-3.png",
+    quantity: 1,
+    category: "Pizza",
+    rate: 4,
+  },
+  {
+    id: 10,
+    title: "Taco Mexican",
+    price: 9.49,
+    image: "./images/food-menu-img-10-4.png",
+    quantity: 1,
+    category: "Mexican",
+    rate: 4,
+  },
+  {
+    id: 11,
+    title: "Chicken Burger",
+    price: 10.25,
+    image: "./images/food-menu-img-11-1.png",
+    quantity: 1,
+    category: "Burger",
+    rate: 5,
+  },
+  {
+    id: 12,
+    title: "Sushi Roll",
+    price: 16.8,
+    image: "./images/food-menu-img-11-2.png",
+    quantity: 1,
+    category: "Japanese",
+    rate: 5,
+  },
+  {
+    id: 13,
+    title: "Hot Burger",
+    price: 5.2,
+    image: "./images/food-menu-img-11-3.png",
+    quantity: 1,
+    category: "Dessert",
+    rate: 4,
+  },
+  {
+    id: 14,
+    title: "Great lunch",
+    price: 6.99,
+    image: "./images/food-menu-img-12-1.png",
+    quantity: 1,
+    category: "Dessert",
+    rate: 5,
+  },
+  {
+    id: 15,
+    title: "Fresh Salad",
+    price: 7.4,
+    image: "./images/food-menu-img-12-2.png",
+    quantity: 1,
+    category: "Healthy",
+    rate: 4,
+  },
+  {
+    id: 16,
+    title: "Grilled Fish",
+    price: 3.99,
+    image: "./images/food-menu-img-8-2.jpg",
+    quantity: 1,
+    category: "Drinks",
+    rate: 4,
+  },
+  {
+    id: 17,
+    title: "Double Burger",
+    price: 4.75,
+    image: "./images/food-menu-img-8-1.jpg",
+    quantity: 1,
+    category: "Drinks",
+    rate: 5,
+  },
+  {
+    id: 18,
+    title: "Donut Sweet",
+    price: 5.5,
+    image: "./images/food-menu-img-8-3.jpg",
+    quantity: 1,
+    category: "Dessert",
+    rate: 4,
+  },
+  {
+    id: 19,
+    title: "Grilled Fish",
+    price: 17.3,
+    image: "./images/food-menu-img-10-3.png",
+    quantity: 1,
+    category: "Seafood",
+    rate: 5,
+  },
+  {
+    id: 20,
+    title: "Double Burger",
+    price: 14.99,
+    image: "./images/food-menu-img-9-3.png",
+    quantity: 1,
+    category: "Burger",
+    rate: 5,
+  },
+];
 
-
-    const products = [
-    {
-        id: 1,
-        title: "Cheese Pizza",
-        price: 10.99,
-        image: "../images/food-menu-img-10-1.png",
-        quantity : 1 ,
-        category: "Pizza",
-        rate: 5
-    },
-    {
-        id: 2,
-        title: "Burger Deluxe",
-        price: 12.50,
-        image: "./images/food-menu-img-11-1.png",
-        quantity : 1 ,
-        category: "Burger",
-        rate: 4
-    },
-    {
-        id: 3,
-        title: "Chicken Sandwich",
-        price: 8.99,
-        image: "../images/food-menu-img-9-2.png",
-        quantity : 1 ,
-        category: "Sandwich",
-        rate: 5
-    },
-    {
-        id: 4,
-        title: "French Fries",
-        price: 4.99,
-        image: "../images/food-menu-img-9-3.png",
-        quantity : 1 ,
-        category: "Snacks",
-        rate: 4
-    },
-    {
-        id: 5,
-        title: "Hot Dog",
-        price: 7.25,
-        image: "../images/food-menu-img-9-4.png",
-        quantity : 1 ,
-        category: "Fast Food",
-        rate: 4
-    },
-    {
-        id: 6,
-        title: "Pasta Alfredo",
-        price: 13.75,
-        image: "../images/food-menu-img-9-4.png",
-        quantity : 1 ,
-        category: "Pasta",
-        rate: 5
-    },
-    {
-        id: 7,
-        title: "Fried Chicken",
-        price: 11.49,
-        image: "../images/food-menu-img-10-1.png",
-        quantity : 1 ,
-        category: "Chicken",
-        rate: 5
-    },
-    {
-        id: 8,
-        title: "Beef Steak",
-        price: 18.99,
-        image: "../images/food-menu-img-10-2.png",
-        quantity : 1 ,
-        category: "Steak",
-        rate: 5
-    },
-    {
-        id: 9,
-        title: "Seafood Pizza",
-        price: 15.99,
-        image: "../images/food-menu-img-10-3.png",
-        quantity : 1 ,
-        category: "Pizza",
-        rate: 4
-    },
-    {
-        id: 10,
-        title: "Taco Mexican",
-        price: 9.49,
-        image: "../images/food-menu-img-10-4.png",
-        quantity : 1 ,
-        category: "Mexican",
-        rate: 4
-    },
-    {
-        id: 11,
-        title: "Chicken Burger",
-        price: 10.25,
-        image: "../images/food-menu-img-11-1.png",
-        quantity : 1 ,
-        category: "Burger",
-        rate: 5
-    },
-    {
-        id: 12,
-        title: "Sushi Roll",
-        price: 16.80,
-        image: "../images/food-menu-img-11-2.png",
-        quantity : 1 ,
-        category: "Japanese",
-        rate: 5
-    },
-    {
-        id: 13,
-        title: "Hot Burger",
-        price: 5.20,
-        image: "../images/food-menu-img-11-3.png",
-        quantity : 1 ,
-        category: "Dessert",
-        rate: 4
-    },
-    {
-        id: 14,
-        title: "Great lunch",
-        price: 6.99,
-        image: "../images/food-menu-img-12-1.png",
-        quantity : 1 ,
-        category: "Dessert",
-        rate: 5
-    },
-    {
-        id: 15,
-        title: "Fresh Salad",
-        price: 7.40,
-        image: "../images/food-menu-img-12-2.png",
-        quantity : 1 ,
-        category: "Healthy",
-        rate: 4
-    },
-    {
-        id: 16,
-        title: "Grilled Fish",
-        price: 3.99,
-        image: "../images/food-menu-img-8-2.jpg",
-        quantity : 1 ,
-        category: "Drinks",
-        rate: 4
-    },
-    {
-        id: 17,
-        title: "Double Burger",
-        price: 4.75,
-        image: "../images/food-menu-img-8-1.jpg",
-        quantity : 1 ,
-        category: "Drinks",
-        rate: 5
-    },
-    {
-        id: 18,
-        title: "Donut Sweet",
-        price: 5.50,
-        image: "../images/food-menu-img-8-3.jpg",
-        quantity : 1 ,
-        category: "Dessert",
-        rate: 4
-    },
-    {
-        id: 19,
-        title: "Grilled Fish",
-        price: 17.30,
-        image: "../images/food-menu-img-10-3.png",
-        quantity : 1 ,
-        category: "Seafood",
-        rate: 5
-    },
-    {
-        id: 20,
-        title: "Double Burger",
-        price: 14.99,
-        image: "../images/food-menu-img-9-3.png",
-        quantity : 1 ,
-        category: "Burger",
-        rate: 5
-    }
-    ];
-
-
-document.addEventListener( 'DOMContentLoaded', function() {
-    let items = ''
-    products.forEach( (product , index) => {
-        items +=`
+document.addEventListener("DOMContentLoaded", function () {
+  let items = "";
+  products.forEach((product, index) => {
+    items += `
             <div class="card">
                 <div class="img-box">
                     <img src="${product.image}" alt="">
@@ -322,39 +316,38 @@ document.addEventListener( 'DOMContentLoaded', function() {
                     <i class="fa-solid fa-cart-shopping"></i> Add to Cart
                 </button>
             </div>
-        `
-    })
-    setTimeout(() => {
-        
-        document.querySelector('.itemss').innerHTML = items
-    } , 1500)
-})
+        `;
+  });
+  setTimeout(() => {
+    document.querySelector(".itemss").innerHTML = items;
+  }, 1500);
+});
 
-let cartItems 
+let cartItems;
 
-if( localStorage.getItem('cartItems') ){
-    cartItems = JSON.parse( localStorage.getItem('cartItems') )
-}else{
-    cartItems = []
+if (localStorage.getItem("cartItems")) {
+  cartItems = JSON.parse(localStorage.getItem("cartItems"));
+} else {
+  cartItems = [];
 }
 
-function addToCart( i ){
-    let product = products[i]
-    sucsessAdd(product)
-    let finded = cartItems.find( (item) => item.id === product.id )
-    if( finded ){
-        finded.quantity++
-    }else{
-        cartItems.push( product )
-    }
-    console.log( cartItems);
-    displayCartItems(i)
-    
+function addToCart(i) {
+  let product = products[i];
+  sucsessAdd(product);
+  let finded = cartItems.find((item) => item.id === product.id);
+  if (finded) {
+    finded.quantity++;
+  } else {
+    cartItems.push(product);
+  }
+  console.log(cartItems);
+  displayCartItems(i);
 }
 
-
-function displayCartItems(i){
-    let cardInCart = cartItems.map( (product , index) => 
+function displayCartItems(i) {
+  let cardInCart = cartItems
+    .map(
+      (product, index) =>
         `
         <div class="item">
                 <div class="left">
@@ -374,177 +367,150 @@ function displayCartItems(i){
                 </div>
             </div>
     
-    `
-    ).join('')
+    `,
+    )
+    .join("");
 
-    if( cardInCart.length > 0){
-        document.querySelector('.cart .itemss').innerHTML = cardInCart
-    }else{
-        document.querySelector('cart .itemss').innerHTML = `<h5 style="text-align: center;"> Cart is Empty </h5>`
-    }   
-    let totalPrice = cartItems.reduce((a , b )=>{
-        return a + b.price
-    } , 0)
-    document.querySelector('.totalPrice').innerHTML = `$${totalPrice.toFixed(2)}`
+  if (cardInCart.length > 0) {
+    document.querySelector(".cart .itemss").innerHTML = cardInCart;
+  } else {
+    document.querySelector("cart .itemss").innerHTML =
+      `<h5 style="text-align: center;"> Cart is Empty </h5>`;
+  }
+  let totalPrice = cartItems.reduce((a, b) => {
+    return a + b.price;
+  }, 0);
+  document.querySelector(".totalPrice").innerHTML = `$${totalPrice.toFixed(2)}`;
 
-
-    document.querySelector('.amount').innerHTML = cartItems.length
-    localStorage.setItem('cartItems' , JSON.stringify(cartItems))
+  document.querySelector(".amount").innerHTML = cartItems.length;
+  localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
 
-
-function increment(i){
-    cartItems[i].quantity++
-    displayCartItems(i)
+function increment(i) {
+  cartItems[i].quantity++;
+  displayCartItems(i);
 }
 
-function decrement(i){
-    if(cartItems[i].quantity > 1){
-        cartItems[i].quantity--
-        displayCartItems(i)
-    }else{
-    deleteItem()
-    }
+function decrement(i) {
+  if (cartItems[i].quantity > 1) {
+    cartItems[i].quantity--;
+    displayCartItems(i);
+  } else {
+    deleteItem();
+  }
 }
 
-function deleteItem(i){
-    let x = confirm('are you sure ?')
-    if(x){
-        cartItems.splice(i , 1)
-        displayCartItems()
-    }
-    
+function deleteItem(i) {
+  let x = confirm("are you sure ?");
+  if (x) {
+    cartItems.splice(i, 1);
+    displayCartItems();
+  }
 }
-function remove(i){
-    let filterd = cartItems.filter( (product , index) => index !== i )
-    cartItems = filterd
-    
-    displayCartItems()
+function remove(i) {
+  let filterd = cartItems.filter((product, index) => index !== i);
+  cartItems = filterd;
+
+  displayCartItems();
 }
 function sucsessAdd(product) {
+  let box = document.createElement("div");
+  box.className = "sucssesAdd";
 
-    let box = document.createElement('div');
-    box.className = 'sucssesAdd';
+  // image
+  let image = document.createElement("div");
+  image.className = "image";
 
-    // image
-    let image = document.createElement('div');
-    image.className = 'image';
+  let img = document.createElement("img");
+  img.src = product.image;
 
-    let img = document.createElement('img');
-    img.src = product.image;
+  image.appendChild(img);
 
-    image.appendChild(img);
+  // text
+  let text = document.createElement("b");
 
-    // text
-    let text = document.createElement('b');
-
-    text.innerHTML = `
+  text.innerHTML = `
         Item Added To Cart <br>
         <span>(${product.title})</span>
     `;
 
-    // buttons
-    let btnss = document.createElement('div');
-    btnss.className = 'btnss';
+  // buttons
+  let btnss = document.createElement("div");
+  btnss.className = "btnss";
 
-    btnss.innerHTML = `
+  btnss.innerHTML = `
         <button class="closeBtn">Close</button>
         <button class="goCart">Go To Cart</button>
     `;
 
-    // append
-    box.appendChild(image);
-    box.appendChild(text);
-    box.appendChild(btnss);
+  // append
+  box.appendChild(image);
+  box.appendChild(text);
+  box.appendChild(btnss);
 
-    document.body.appendChild(box);
+  document.body.appendChild(box);
 
-    // animation
-    setTimeout(() => {
-        box.style.transform = `translate(-50%, -50%) scale(1)`;
-        shadow.classList.add('open');
-    }, 100);
+  // animation
+  setTimeout(() => {
+    box.style.transform = `translate(-50%, -50%) scale(1)`;
+    shadow.classList.add("open");
+  }, 100);
 
-    // close button
-    box.querySelector('.closeBtn').onclick = () => {
-        box.remove();
-        shadow.classList.remove('open');
-    };
+  // close button
+  box.querySelector(".closeBtn").onclick = () => {
+    box.remove();
+    shadow.classList.remove("open");
+  };
 
-    // go to cart
-    box.querySelector('.goCart').onclick = () => {
-        document.querySelector('.cart').classList.add('open');
-        box.remove();
-    };
+  // go to cart
+  box.querySelector(".goCart").onclick = () => {
+    document.querySelector(".cart").classList.add("open");
+    box.remove();
+  };
 
-    shadow.onclick = () => {
-        box.remove();
-        shadow.classList.remove('open');
-        document.querySelector('.cart').classList.remove('open');
-        dropMenu.classList.remove('open')
-    };
+  shadow.onclick = () => {
+    box.remove();
+    shadow.classList.remove("open");
+    document.querySelector(".cart").classList.remove("open");
+    dropMenu.classList.remove("open");
+  };
 }
-displayCartItems()
+displayCartItems();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-handelr.forEach( (ele )=>{
-
-    ele.onclick = function(){
-        if( this.className.includes('open')){
-            cart.classList.add('open')
-            shadow.classList.add('open')
-        }else{
-            cart.classList.remove('open')
-            shadow.classList.remove('open')
-
-        }
-        
+handelr.forEach((ele) => {
+  ele.onclick = function () {
+    if (this.className.includes("open")) {
+      cart.classList.add("open");
+      shadow.classList.add("open");
+    } else {
+      cart.classList.remove("open");
+      shadow.classList.remove("open");
     }
-})
+  };
+});
 
-shadow.onclick = function(){
-    shadow.classList.remove('open')
-    cart.classList.remove('open')
-    dropMenu.classList.remove('open')
-    
-}
+shadow.onclick = function () {
+  shadow.classList.remove("open");
+  cart.classList.remove("open");
+  dropMenu.classList.remove("open");
+};
 
+iconMenu.onclick = function () {
+  dropMenu.classList.toggle("open");
+  shadow.classList.toggle("open");
+};
 
+document.addEventListener("scroll", function () {
+  if (window.scrollY > 600) {
+    toUp.classList.add("open");
+  } else {
+    toUp.classList.remove("open");
+  }
+});
 
-
-iconMenu.onclick = function(){
-    dropMenu.classList.toggle('open')
-    shadow.classList.toggle('open')
-}
-
-document.addEventListener('scroll',function(){
-    if(window.scrollY > 600){
-        toUp.classList.add('open')
-    }else{
-        toUp.classList.remove('open')
-    }
-})
-
-toUp.onclick = function(){
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-}
+toUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};

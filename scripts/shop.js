@@ -6,190 +6,188 @@ let handelr = document.querySelectorAll('.handelr')
 let shadow = document.querySelector('.shadow')
 
 
-
-    const products = [
-    {
-        id: 1,
-        title: "Cheese Pizza",
-        price: 10.99,
-        image: "../images/food-menu-img-10-1.png",
-        quantity : 1 ,
-        category: "Pizza",
-        rate: 5
-    },
-    {
-        id: 2,
-        title: "Burger Deluxe",
-        price: 12.50,
-        image: "./images/food-menu-img-11-1.png",
-        quantity : 1 ,
-        category: "Burger",
-        rate: 4
-    },
-    {
-        id: 3,
-        title: "Chicken Sandwich",
-        price: 8.99,
-        image: "../images/food-menu-img-9-2.png",
-        quantity : 1 ,
-        category: "Sandwich",
-        rate: 5
-    },
-    {
-        id: 4,
-        title: "French Fries",
-        price: 4.99,
-        image: "../images/food-menu-img-9-3.png",
-        quantity : 1 ,
-        category: "Snacks",
-        rate: 4
-    },
-    {
-        id: 5,
-        title: "Hot Dog",
-        price: 7.25,
-        image: "../images/food-menu-img-9-4.png",
-        quantity : 1 ,
-        category: "Fast Food",
-        rate: 4
-    },
-    {
-        id: 6,
-        title: "Pasta Alfredo",
-        price: 13.75,
-        image: "../images/food-menu-img-9-4.png",
-        quantity : 1 ,
-        category: "Pasta",
-        rate: 5
-    },
-    {
-        id: 7,
-        title: "Fried Chicken",
-        price: 11.49,
-        image: "../images/food-menu-img-10-1.png",
-        quantity : 1 ,
-        category: "Chicken",
-        rate: 5
-    },
-    {
-        id: 8,
-        title: "Beef Steak",
-        price: 18.99,
-        image: "../images/food-menu-img-10-2.png",
-        quantity : 1 ,
-        category: "Steak",
-        rate: 5
-    },
-    {
-        id: 9,
-        title: "Seafood Pizza",
-        price: 15.99,
-        image: "../images/food-menu-img-10-3.png",
-        quantity : 1 ,
-        category: "Pizza",
-        rate: 4
-    },
-    {
-        id: 10,
-        title: "Taco Mexican",
-        price: 9.49,
-        image: "../images/food-menu-img-10-4.png",
-        quantity : 1 ,
-        category: "Mexican",
-        rate: 4
-    },
-    {
-        id: 11,
-        title: "Chicken Burger",
-        price: 10.25,
-        image: "../images/food-menu-img-11-1.png",
-        quantity : 1 ,
-        category: "Burger",
-        rate: 5
-    },
-    {
-        id: 12,
-        title: "Sushi Roll",
-        price: 16.80,
-        image: "../images/food-menu-img-11-2.png",
-        quantity : 1 ,
-        category: "Japanese",
-        rate: 5
-    },
-    {
-        id: 13,
-        title: "Hot Burger",
-        price: 5.20,
-        image: "../images/food-menu-img-11-3.png",
-        quantity : 1 ,
-        category: "Dessert",
-        rate: 4
-    },
-    {
-        id: 14,
-        title: "Great lunch",
-        price: 6.99,
-        image: "../images/food-menu-img-12-1.png",
-        quantity : 1 ,
-        category: "Dessert",
-        rate: 5
-    },
-    {
-        id: 15,
-        title: "Fresh Salad",
-        price: 7.40,
-        image: "../images/food-menu-img-12-2.png",
-        quantity : 1 ,
-        category: "Healthy",
-        rate: 4
-    },
-    {
-        id: 16,
-        title: "Grilled Fish",
-        price: 3.99,
-        image: "../images/food-menu-img-8-2.jpg",
-        quantity : 1 ,
-        category: "Drinks",
-        rate: 4
-    },
-    {
-        id: 17,
-        title: "Double Burger",
-        price: 4.75,
-        image: "../images/food-menu-img-8-1.jpg",
-        quantity : 1 ,
-        category: "Drinks",
-        rate: 5
-    },
-    {
-        id: 18,
-        title: "Donut Sweet",
-        price: 5.50,
-        image: "../images/food-menu-img-8-3.jpg",
-        quantity : 1 ,
-        category: "Dessert",
-        rate: 4
-    },
-    {
-        id: 19,
-        title: "Grilled Fish",
-        price: 17.30,
-        image: "../images/food-menu-img-10-3.png",
-        quantity : 1 ,
-        category: "Seafood",
-        rate: 5
-    },
-    {
-        id: 20,
-        title: "Double Burger",
-        price: 14.99,
-        image: "../images/food-menu-img-9-3.png",
-        quantity : 1 ,
-        category: "Burger",
-        rate: 5
-    }
-    ];
-
+const products = [
+  {
+    id: 1,
+    title: "Cheese Pizza",
+    price: 10.99,
+    image: "./images/food-menu-img-10-1.png",
+    quantity: 1,
+    category: "Pizza",
+    rate: 5,
+  },
+  {
+    id: 2,
+    title: "Burger Deluxe",
+    price: 12.5,
+    image: "./images/food-menu-img-11-1.png",
+    quantity: 1,
+    category: "Burger",
+    rate: 4,
+  },
+  {
+    id: 3,
+    title: "Chicken Sandwich",
+    price: 8.99,
+    image: "./images/food-menu-img-9-2.png",
+    quantity: 1,
+    category: "Sandwich",
+    rate: 5,
+  },
+  {
+    id: 4,
+    title: "French Fries",
+    price: 4.99,
+    image: "./images/food-menu-img-9-3.png",
+    quantity: 1,
+    category: "Snacks",
+    rate: 4,
+  },
+  {
+    id: 5,
+    title: "Hot Dog",
+    price: 7.25,
+    image: "./images/food-menu-img-9-4.png",
+    quantity: 1,
+    category: "Fast Food",
+    rate: 4,
+  },
+  {
+    id: 6,
+    title: "Pasta Alfredo",
+    price: 13.75,
+    image: "./images/food-menu-img-9-4.png",
+    quantity: 1,
+    category: "Pasta",
+    rate: 5,
+  },
+  {
+    id: 7,
+    title: "Fried Chicken",
+    price: 11.49,
+    image: "./images/food-menu-img-10-1.png",
+    quantity: 1,
+    category: "Chicken",
+    rate: 5,
+  },
+  {
+    id: 8,
+    title: "Beef Steak",
+    price: 18.99,
+    image: "./images/food-menu-img-10-2.png",
+    quantity: 1,
+    category: "Steak",
+    rate: 5,
+  },
+  {
+    id: 9,
+    title: "Seafood Pizza",
+    price: 15.99,
+    image: "./images/food-menu-img-10-3.png",
+    quantity: 1,
+    category: "Pizza",
+    rate: 4,
+  },
+  {
+    id: 10,
+    title: "Taco Mexican",
+    price: 9.49,
+    image: "./images/food-menu-img-10-4.png",
+    quantity: 1,
+    category: "Mexican",
+    rate: 4,
+  },
+  {
+    id: 11,
+    title: "Chicken Burger",
+    price: 10.25,
+    image: "./images/food-menu-img-11-1.png",
+    quantity: 1,
+    category: "Burger",
+    rate: 5,
+  },
+  {
+    id: 12,
+    title: "Sushi Roll",
+    price: 16.8,
+    image: "./images/food-menu-img-11-2.png",
+    quantity: 1,
+    category: "Japanese",
+    rate: 5,
+  },
+  {
+    id: 13,
+    title: "Hot Burger",
+    price: 5.2,
+    image: "./images/food-menu-img-11-3.png",
+    quantity: 1,
+    category: "Dessert",
+    rate: 4,
+  },
+  {
+    id: 14,
+    title: "Great lunch",
+    price: 6.99,
+    image: "./images/food-menu-img-12-1.png",
+    quantity: 1,
+    category: "Dessert",
+    rate: 5,
+  },
+  {
+    id: 15,
+    title: "Fresh Salad",
+    price: 7.4,
+    image: "./images/food-menu-img-12-2.png",
+    quantity: 1,
+    category: "Healthy",
+    rate: 4,
+  },
+  {
+    id: 16,
+    title: "Grilled Fish",
+    price: 3.99,
+    image: "./images/food-menu-img-8-2.jpg",
+    quantity: 1,
+    category: "Drinks",
+    rate: 4,
+  },
+  {
+    id: 17,
+    title: "Double Burger",
+    price: 4.75,
+    image: "./images/food-menu-img-8-1.jpg",
+    quantity: 1,
+    category: "Drinks",
+    rate: 5,
+  },
+  {
+    id: 18,
+    title: "Donut Sweet",
+    price: 5.5,
+    image: "./images/food-menu-img-8-3.jpg",
+    quantity: 1,
+    category: "Dessert",
+    rate: 4,
+  },
+  {
+    id: 19,
+    title: "Grilled Fish",
+    price: 17.3,
+    image: "./images/food-menu-img-10-3.png",
+    quantity: 1,
+    category: "Seafood",
+    rate: 5,
+  },
+  {
+    id: 20,
+    title: "Double Burger",
+    price: 14.99,
+    image: "./images/food-menu-img-9-3.png",
+    quantity: 1,
+    category: "Burger",
+    rate: 5,
+  },
+];
 
 document.addEventListener( 'DOMContentLoaded', function() {
     let items = ''
